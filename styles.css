@@ -1,34 +1,17 @@
 body {
     margin: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
-div {
-    display: flex;
-    width: 50%;
-    height: 50vh;
+div.item {
+    flex-basis: 6.25vw;
 }
 
 .container {
     display: flex;
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.topLeft {
-    background-color: grey;
-}
-
-.topRight {
-    background-color: aqua;
-}
-
-.bottomLeft {
-    background-color: blue;
-}
-
-.bottomRight {
-    background-color: tomato;
 }
