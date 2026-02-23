@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+}
+
+div {
+    display: flex;
+    width: 50%;
+    height: 50vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.topLeft {
+    background-color: grey;
+}
+
+.topRight {
+    background-color: aqua;
+}
+
+.bottomLeft {
+    background-color: blue;
+}
+
+.bottomRight {
+    background-color: tomato;
+}
