@@ -4,7 +4,7 @@ body {
     height: 100vh;
 }
 
-div.item {
+div.element {
     flex-basis: 6.25vw;
 }
 
