@@ -9,16 +9,16 @@ const blue = Math.floor(Math.random() * 255);
 return `#${red.toString(16)}${green.toString(16)}${blue.toString(16)}`
 }
 
-document.getElementById('choice').addEventListener('click', (e) => {
-    
-    let choice;
+let choice;
 
-    while (true) {
+function selectSize() {
+
+     while (true) {
         
-    choice = prompt('Select Grid Size:', 'max: 100');
-        if (Number(choice) >= 100) {
-        alert("Number too high! Try again!");
-        }   else if (Number(choice) < 100) {
+        choice = prompt('Select Grid Size:', 'max: 100');
+            if (Number(choice) >= 100) {
+                alert("Number too high! Try again!");
+            }   else if (Number(choice) < 100) {
         break;
         }
     
@@ -39,12 +39,12 @@ newDiv.addEventListener('mouseenter', (e) => {
     newDiv.dataset.opacity = currentOpacity; 
 });
 
-// newDiv.addEventListener('mouseleave', (e) => {
-//     e.target.style.backgroundColor = "black";
-// })
-
 cnt.appendChild(newDiv);
 }
+}
 
+selectSize();
 
+document.getElementById('choice').addEventListener('click', (e) => {
+    selectSize();
 })
